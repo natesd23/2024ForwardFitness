@@ -1,0 +1,16 @@
+/* CSS Document */
+body {
+	background-color: aqua;
+	color:azure;
+	padding:100px;
+	margin:0;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif"
+	 }
+h1 {
+	color: aliceblue;
+	font-size:3em;
+}
+.spooky {
+	background-color: black;
+	color:aqua;
+}
