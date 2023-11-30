@@ -91,8 +91,13 @@ main {
 .round {
 	border-radius:8px;
 }
+.map {
+	border: 8px solid #000;
+	width:95%;
+	height:50%;
+}
 /* Media query for tablet viewport */
-@media screen and (min-width:630px){
+@media screen and (min-width:1137px print){
 	/* tablet viewport: show tablet-desktop class, hide mobile class*/
 	.tablet-desktop {
 		display:block;
@@ -116,21 +121,101 @@ main {
 	nav li a {
 		padding: 0.1em 0.75em;
 	}
-	
+	/* tablet view point:style rules for content area */
+	main ul {
+		margin:0 0 4% 10%;
+	}
+	#exercises {
+		clear: left;
+		border-top: 1px solid#000;
+		border-bottom: 1px solid #000;
+		background:linear-gradient(to right, #ccc, #fff);
+		background-color: #f2f2f2;
+		padding: 1% 2%;
+	}
+	#excercises dt {
+		font-weight: bold;
+	}
+	#excersises dd {
+		padding: 0.5% 1% 2% 0;
+	}
+	.tel-num {
+		font-size:2.25em;
+	}
+	.map {
+		width: 600px;
+		height:450px;
+	}
+	#contact {
+		text-align:center;
+	}
 }/* END ofmeidia query for tablet viewport */
-/*#exercises {
-	clear: left;
-	border-top: 1px solid#000;
-	border-bottom: 1px solid #000;
-	background-color: #f2f2f2;
-	padding: 1% 2%;
+
+/* Media query for tablet viewport */
+@media screen and (min-width:680px){
+	
+	/*desktop viewpoint:styles for header */
+	header {
+		width:25%;
+		float:left;
+		padding-bottom: 0;
+	}
+	
+	/* desktop viewpoint:style rules for navigation*/
+	nav {
+		float: right;
+		width: 70%;
+		margin:4em 1em 0 0;
+	}
+	nav ul {
+		text-align: right;
+		
+	}
+	nav li {
+		border:none;
+	
+	}
+	nav li a {
+		padding: 0.5em 1em;
+	}
+	nav li a a:hover {
+		color:#000;
+		background-color: #fff;
+		
+	}
+	/*Desktop Viewport: style rules for main content*/
+	main {
+		clear:both;
+		
+	}
+	main h1 {
+		font-size: 1.8em
+	}
+	#weights, #cardio, #training {
+		width: 29%;
+		float:left;
+		margin: 0 2%;
+	}
+	#excersizes {
+		clear:left;
+	}
+	
+}/*closing desktop viewpoint*/
+/* large screen media query*/
+@media screen and (min-width:1921px){
+	#container {
+		width:1920px;
+	}
+}/* End large screen media query*/
+
+/* media query for print*/
+@media print {
+	body {
+		background-color: #fff;
+		color: #000;
+	}
 }
-#excercises dt {
-	font-weight: bold;
-}
-#excersises dd {
-	padding: 0.5% 1% 2% 0;
-}*/
+
 .external-link {
 	color: #606;
 	font-weight: bold;
@@ -154,4 +239,4 @@ footer p {
 footer p a {
 	color: #fff;
 	text-decoration: none;
-}
+	}
